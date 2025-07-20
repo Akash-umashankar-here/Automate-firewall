@@ -7,7 +7,7 @@ This tool performs real-time packet inspection, checks for malicious IPs using V
 * Checks suspicious IPs and payloads against VirusTotal API.
 * Blocks malicious IPs via iptables.
 * Stores blacklisted IPs in a MariaDB database.
-* Redirects suspicious SSH traffic to a honeypot port (2222).
+* Redirects suspicious SSH traffic to a honeypot port (2222). Run a honeypot like Cowrie by pulling its image.
 
 ## Requirements
 * Python 3.7+
