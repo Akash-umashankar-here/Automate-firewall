@@ -14,13 +14,14 @@ This tool performs real-time packet inspection, checks for malicious IPs using V
 * Linux OS (due to use of iptables)
 * Packages: scapy, mariadb, requests
 * MariadbDB server with
+  ```
   CREATE DATABASE blacklist;
   USE blacklist;
   CREATE TABLE blacklist (
     ip VARCHAR(45) PRIMARY KEY,
     date_added DATE
   );
-
+  ```
 ## Files
 * blacklist.txt: Raw blacklist from myip.ms
 * final_list.txt: Processed recent IPs
